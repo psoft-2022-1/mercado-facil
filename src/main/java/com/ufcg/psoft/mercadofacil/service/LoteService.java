@@ -2,14 +2,13 @@ package com.ufcg.psoft.mercadofacil.service;
 
 import java.util.List;
 
-import com.ufcg.psoft.mercadofacil.model.Lote;
-import com.ufcg.psoft.mercadofacil.model.Produto;
+import com.ufcg.psoft.mercadofacil.dto.LoteDTO;
+import com.ufcg.psoft.mercadofacil.exception.ProdutoNotFoundException;
 
 public interface LoteService {
 	
-	public List<Lote> listarLotes();
+	public List<LoteDTO> listarLotes();
 
-	public void salvarLote(Lote lote);
+	public LoteDTO criaLote(int numItens, Long prodId) throws ProdutoNotFoundException;
 	
-	public Lote criaLote(int numItens, Produto produto);
 }

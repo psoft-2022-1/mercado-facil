@@ -1,7 +1,6 @@
 package com.ufcg.psoft.mercadofacil.service;
 
 import java.util.List;
-
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
@@ -32,6 +31,7 @@ public class ClienteServiceImpl implements ClienteService {
 		return clienteRepository.findById(id)
 				.orElseThrow(() -> new ClienteNotFoundException());
 	}
+	
 	public ClienteDTO getClienteByCpf(Long cpf) throws ClienteNotFoundException {
 		Cliente cliente = clienteRepository.findByCpf(cpf)
 				.orElseThrow(() -> new ClienteNotFoundException());
@@ -69,7 +69,7 @@ public class ClienteServiceImpl implements ClienteService {
 		return modelMapper.map(cliente, ClienteDTO.class);
 	}
 
-	public ClienteDTO atualizaCliente(long id, ClienteDTO clienteDTO) throws ClienteNotFoundException {
+	public ClienteDTO atualizaCliente(Long id, ClienteDTO clienteDTO) throws ClienteNotFoundException {
 		
 		Cliente cliente = getClienteId(id);
 		

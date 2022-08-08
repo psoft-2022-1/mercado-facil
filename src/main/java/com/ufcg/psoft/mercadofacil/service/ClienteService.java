@@ -18,6 +18,6 @@ public interface ClienteService {
 	
 	public ClienteDTO criaCliente(ClienteDTO clienteDTO) throws ClienteAlreadyCreatedException;
 	
-	public ClienteDTO atualizaCliente(long id, ClienteDTO clienteDTO) throws ClienteNotFoundException;
+	public ClienteDTO atualizaCliente(Long id, ClienteDTO clienteDTO) throws ClienteNotFoundException;
 
 }

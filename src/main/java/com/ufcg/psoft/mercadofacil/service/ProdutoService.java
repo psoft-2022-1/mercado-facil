@@ -1,24 +1,25 @@
 package com.ufcg.psoft.mercadofacil.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import com.ufcg.psoft.mercadofacil.dto.ProdutoDTO;
+import com.ufcg.psoft.mercadofacil.exception.ProdutoAlreadyCreatedException;
+import com.ufcg.psoft.mercadofacil.exception.ProdutoNotFoundException;
 import com.ufcg.psoft.mercadofacil.model.Produto;
 
 public interface ProdutoService {
 
-	public Optional<Produto> getProdutoById(long id);
+	public ProdutoDTO getProdutoById(Long id) throws ProdutoNotFoundException;
 	
-	public List<Produto> getProdutoByCodigoBarra(String codigo);
+	public ProdutoDTO getProdutoByCodigoBarra(String codigoBarra) throws ProdutoNotFoundException;
 	
-	public void removerProdutoCadastrado(Produto produto);
+	public List<ProdutoDTO> listarProdutos();
+	
+	public void removerProdutoCadastrado(Long id) throws ProdutoNotFoundException;
+	
+	public ProdutoDTO criaProduto(ProdutoDTO produtoDTO) throws ProdutoAlreadyCreatedException;
+	
+	public ProdutoDTO atualizaProduto(Long id, ProdutoDTO produtoDTO) throws ProdutoNotFoundException;
 
-	public void salvarProdutoCadastrado(Produto produto);
-
-	public List<Produto> listarProdutos();
-	
-	public Produto criaProduto(ProdutoDTO produto);
-	
-	public Produto atualizaProduto(ProdutoDTO produtoDTO, Produto produto);
+	public Produto getProduto(Long id) throws ProdutoNotFoundException;
 }

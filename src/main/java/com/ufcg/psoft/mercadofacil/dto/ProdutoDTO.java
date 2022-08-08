@@ -12,6 +12,8 @@ public class ProdutoDTO {
 
 	private String fabricante;
 	
+	public ProdutoDTO() {}
+			
 	public ProdutoDTO(Long id, String nome, double preco, String codigoBarra, String fabricante) {
 		this.id = id;
 		this.nome = nome;

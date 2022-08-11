@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.basics.steps;
+package com.ufcg.psoft.mercadofacil.integration.basics.steps;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -6,8 +6,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 
-import com.ufcg.psoft.mercadofacil.commons.HttpClient;
-import com.ufcg.psoft.mercadofacil.commons.ResponseResults;
+import com.ufcg.psoft.mercadofacil.integration.commons.HttpClient;
+import com.ufcg.psoft.mercadofacil.integration.commons.ResponseResults;
 
 import org.springframework.http.HttpMethod;
 

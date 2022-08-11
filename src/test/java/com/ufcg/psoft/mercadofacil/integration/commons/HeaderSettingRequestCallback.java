@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.commons;
+package com.ufcg.psoft.mercadofacil.integration.commons;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.client.ClientHttpRequest;

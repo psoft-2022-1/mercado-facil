@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.commons;
+package com.ufcg.psoft.mercadofacil.integration.commons;
 
 import org.apache.commons.io.IOUtils;
 

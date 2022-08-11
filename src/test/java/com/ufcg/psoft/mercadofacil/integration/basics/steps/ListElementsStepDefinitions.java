@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.basics.steps;
+package com.ufcg.psoft.mercadofacil.integration.basics.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -13,8 +13,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.google.gson.Gson;
-import com.ufcg.psoft.mercadofacil.commons.HttpClient;
 import com.ufcg.psoft.mercadofacil.dto.ProdutoDTO;
+import com.ufcg.psoft.mercadofacil.integration.commons.HttpClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ListElementsStepDefinitions {

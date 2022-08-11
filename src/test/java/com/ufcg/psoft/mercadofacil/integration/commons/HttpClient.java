@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.commons;
+package com.ufcg.psoft.mercadofacil.integration.commons;
 
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.context.annotation.Scope;

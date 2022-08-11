@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.basics.steps;
+package com.ufcg.psoft.mercadofacil.integration.basics.steps;
 
 import io.cucumber.java.ParameterType;
 

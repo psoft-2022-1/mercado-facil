@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.commons;
+package com.ufcg.psoft.mercadofacil.integration.commons;
 
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;

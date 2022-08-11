@@ -1,4 +1,4 @@
-package com.ufcg.psoft.mercadofacil.extra;
+package com.ufcg.psoft.mercadofacil.integration.extra;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

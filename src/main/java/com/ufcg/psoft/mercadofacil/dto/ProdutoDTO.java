@@ -14,7 +14,7 @@ public class ProdutoDTO {
 	
 	public ProdutoDTO() {}
 			
-	public ProdutoDTO(Long id, String nome, double preco, String codigoBarra, String fabricante) {
+	public ProdutoDTO(Long id, String nome, String codigoBarra, String fabricante, double preco) {
 		this.id = id;
 		this.nome = nome;
 		this.preco = preco;

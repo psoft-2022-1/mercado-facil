@@ -76,18 +76,18 @@ public class ProdutoControllerTests {
 
 		String idProduto = "10005";
 		String fabricante = "Novo fabricante";
-		
+
 		URI uri = new URI(baseUrl + "/produto/" + idProduto);        
 		ProdutoDTO respProduto = this.restTemplate.getForObject(uri, ProdutoDTO.class);
 
 		respProduto.setFabricante(fabricante);
 		HttpEntity<ProdutoDTO> entity = new HttpEntity<ProdutoDTO>(respProduto);
-	    ResponseEntity<ProdutoDTO> respUpdate = this.restTemplate.exchange(uri, HttpMethod.PUT, entity, ProdutoDTO.class);
-		
-	    ProdutoDTO produto = this.restTemplate.getForObject(uri, ProdutoDTO.class);
+		ResponseEntity<ProdutoDTO> respUpdate = this.restTemplate.exchange(uri, HttpMethod.PUT, entity, ProdutoDTO.class);
 
-	    assertThat(produto.getId().intValue()).isEqualTo(respProduto.getId().intValue());
-	    assertThat(produto.getFabricante()).isEqualTo(respProduto.getFabricante());
+		ProdutoDTO produto = this.restTemplate.getForObject(uri, ProdutoDTO.class);
+
+		assertThat(produto.getId().intValue()).isEqualTo(respProduto.getId().intValue());
+		assertThat(produto.getFabricante()).isEqualTo(respProduto.getFabricante());
 
 	}
 }
